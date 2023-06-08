@@ -1,0 +1,112 @@
+body{
+font-family: Arial, ans-serif;
+margin: 0;
+padding: 0;
+background-color: #141414;
+color: #ffffff;
+}
+
+h1, h2 {
+color: #ffffff;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* Styles pour la section de connexion */
+#login {
+text-align: center;
+}
+
+#login form {
+display: inline-block;
+text-align: left;
+background-color: #000000;
+padding: 20px;
+border-radius: 5px;
+}
+
+#login label {
+display: block;
+margin-bottom: 10px;
+color: #ffffff;
+}
+
+#login input[type="email"],
+#login input[type="password"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 3px;
+border: none;
+}
+
+#login button {
+background-color: #e50914;
+color: #ffffff;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+#login button:hover {
+background-color: #b2070e;
+}
+
+/* Styles pour la section d'inscription */
+#signup {
+text-align: center;
+margin-top: 20px;
+}
+
+#signup form {
+display: inline-block;
+text-align: left;
+background-color: #000000;
+padding: 20px;
+border-radius: 5px;
+}
+
+#signup label {
+display: block;
+margin-bottom: 10px;
+color: #ffffff;
+}
+
+#signup input[type="text"],
+#signup input[type="email"],
+#signup input[type="password"] {
+width: 100%;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 3px;
+border: none;
+}
+
+#signup button {
+background-color: #e50914;
+color: #ffffff;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+#signup button:hover {
+background-color: #b2070e;
+#google-login {
+background-color: #db4a39;
+color: #ffffff;
+padding: 10px 20px;
+border: none;
+border-radius: 3px;
+cursor: pointer;
+}
+
+#google-login:hover {
+background-color: #c53727;
+}
