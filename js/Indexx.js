@@ -5,17 +5,23 @@ const loginPassword = document.querySelector("#login #password");
 
 // Écouter l'événement de soumission du formulaire de connexion
 loginForm.addEventListener("submit", function(e) {
+  e.preventDefault()});
+
+// Événement de soumission du formulaire de connexion
+loginForm.addEventListener("submit", function(e) {
   e.preventDefault();
 
-  // Vérifier les informations de connexion
-  const savedEmail = localStorage.getItem("email");
-  const savedPassword = localStorage.getItem("password");
+  // Récupérer les informations de connexion
+  var email = loginEmail.value;
+  var password = loginPassword.value;
 
-  if (loginEmail.value === savedEmail && loginPassword.value === savedPassword) {
+  // Vérifier les informations de connexion
+  if (localStorage.getItem("email") === email && localStorage.getItem("password") === password) {
     alert("Connexion réussie !");
-    // Effectuer des actions supplémentaires après la connexion
+    // Rediriger vers la page de connexion réussie ou effectuer d'autres actions
+    window.location.href = "home.html";
   } else {
-    alert("Identifiants incorrects. Veuillez réessayer !");
+    alert("Identifiant incorrect !");
   }
 });
 
@@ -33,5 +39,5 @@ signupForm.addEventListener("submit", function(e) {
   localStorage.setItem("email", signupEmail.value);
   localStorage.setItem("password", signupPassword.value);
   
-  alert("Inscription réussie ! Vous pouvez maintenant vous connecter.");
+  alert ("Inscription réussie ! Vous pouvez maintenant vous connecter.");
 });

@@ -22,11 +22,15 @@ text-align: center;
 }
 
 #login form {
-display: inline-block;
-text-align: left;
-background-color: #000000;
-padding: 20px;
-border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 15;
+    -webkit-border-radius: 15;
+    -moz-border-radius: 15;
+    -ms-border-radius: 15;
+    -o-border-radius: 15;
 }
 
 #login label {
@@ -98,6 +102,8 @@ cursor: pointer;
 
 #signup button:hover {
 background-color: #b2070e;
+}
+
 #google-login {
 background-color: #db4a39;
 color: #ffffff;
