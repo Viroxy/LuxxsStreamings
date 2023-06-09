@@ -19,7 +19,7 @@ loginForm.addEventListener("submit", function(e) {
   if (localStorage.getItem("email") === email && localStorage.getItem("password") === password) {
     alert("Connexion réussie !");
     // Rediriger vers la page de connexion réussie ou effectuer d'autres actions
-    window.location.href = "home.html";
+    window.location.href = "home";
   } else {
     alert("Identifiant incorrect !");
   }
